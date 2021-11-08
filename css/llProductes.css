@@ -1,0 +1,35 @@
+/* FOR THE PROJECT USE 'vh/vw' INSTEAD OF 'px'.*/
+/*CSS Viewport -> Visible area on the screen.*/
+/*vh -> Viewport Height, in %. 1vh equals 1% of screen's height.*/
+/*vw -> Viewport Height, also in%. 1vh equals 1% of screen's width.*/
+
+#cont{
+    display:flex;
+}
+
+/*
+.dBorder{
+    width:23vw;
+    height:23vh;
+    flex: auto;
+    border: 2.5px;
+    border-style: ridge;
+    border-color:black;
+    border-radius:0.7vh;
+}*/
+
+.prod{
+    height: 22vh;/*vh*/
+    width: 22vw;/*vw*/
+    /* background-color:green; */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(209,180,217,1) 48%, rgba(148,187,233,1) 100%);
+    padding:25px;/*padding: top_valuevh, right_valuevw, bottom_valuevh, left_valuevw;*/
+    margin:25px;/*margin: top_valuevh, right_valuevw, bottom_valuevh, left_valuevw;*/
+    flex: auto;
+    border: 2.5px;/*border: top_valuevh, right_valuevw, bottom_valuevh, left_valuevw;*/
+    border-style:ridge;
+    border-color:black;
+    border-radius:0.7vh;
+    
+}

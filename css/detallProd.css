@@ -1,0 +1,35 @@
+#detallProducte{
+    width:30vw;
+    height:50vh;
+    border-style:double;
+    border-width: 5vh;
+    border-radius: 1vh;
+    border-color:rgb(95, 158, 160);
+    background-color:rgba(0, 0, 0, 0.89);
+    margin-left:30vw;
+    margin-top:20vh;
+    color:rgba(255, 255, 255, 0.856);
+}
+
+#pName{
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.2vh;
+}
+
+#detallProducte img{
+    width: 9vw;
+    height:25vh;
+    margin-left:2.2vw;
+
+}
+
+#desc{
+    margin-left:20vw;
+    z-index:2;
+}
+
+body{
+
+    background-color: rgba(52, 88, 90, 0.89);
+}
