@@ -1,0 +1,6 @@
+[X] Base de datos
+[X] Elegir tematica
+[ ] Revisar el menú
+[ ] Modelo MVC
+[ ] Consultas parametrizadas
+[ ] AJAX
