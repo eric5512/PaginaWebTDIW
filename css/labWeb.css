@@ -1,22 +1,22 @@
-#containers{
+#containers {
     display: flex;
 }
 
-#menuP{
+#menuP {
     /* text-align: center; */
     display:flex;
     flex-direction: row;
     flex-wrap: auto;
 }
 
-#logo{
+#logo {
     width: 125px;
     height: 125px;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
 }
 
-#session{
+#session {
     margin-top:4vh;
     width: 100px;
     height: 60px;
@@ -24,11 +24,11 @@
     mix-blend-mode: multiply;
 }
 
-#menuP ul{
+#menuP ul {
     margin-left: 25vw;
 }
 
-.itemsH{
+.itemsH {
     /* text-align:center; */
     
     border-radius:15px;
@@ -45,7 +45,7 @@
     transition: ease-out 85ms;
 }
 
-#menuP li button{
+#menuP li button {
     text-align: center;
     font-size:small;
     /* margin-bottom:1vh; */
@@ -54,13 +54,13 @@
     color:white;
 }
 
-/* #menuP li p{
+/* #menuP li p {
     text-align: center;
     font-size:small;
     /* margin-bottom:1vh; esta linea estaba comentada
 } */
 
-#textH{
+#textH {
     font-size: larger;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 4vh;
@@ -68,53 +68,53 @@
     padding-right: 3vw;
 }
 
-#menuP li:hover{
+#menuP li:hover {
     background-color:#831083bb;
     /* padding: 0.12em 1.2em 0.7em 1.2em;  */
     text-align: center;
     /* animation-duration:10s; */
 }
 
-#text{
+#text {
     flex-direction:row;
     padding-left: 0px;
 }
 
-#categories{
+#categories {
     flex-direction: row;
 }
 
-body{
+body {
     background-color:rgba(144, 203, 238, 0.692);
 }
 
-header{
+header {
     background-color:rgba(228, 231, 14, 0.801);
     border-radius:7px;
 }
 
-#myButton{
+#myButton {
     color:white;
     background-color:black;
     width: 7vw;
     height: 2vh;
 }
 
-#div1{
+#div1 {
     float:left;
     margin-top:5vh;
     visibility:hidden;
     /* margin-right:3vw; */
 }
 
-#div2{
+#div2 {
     float:left;
     margin-top:5vh;
     visibility: hidden;
     /* margin-right:3vw; */
 }
 
-#div3{
+#div3 {
     float:left;
     margin-top:5vh;
     visibility: hidden;
