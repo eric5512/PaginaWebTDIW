@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="..\css\detallProd.css">
-</head>
 <body>
     <div id="detallProducte">
         <p id="pName">Product name</p>

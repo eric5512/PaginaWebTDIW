@@ -2,13 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="..\css\form.css">
+        <link rel="stylesheet" type="text/css" href="..\css\css.css">
     </head>
 
     <header>
         <h1>Formulari de registre</h1>
     </header>
-<!-- CHECK IF ALL THE VALIDATORS ARE OK!( pista: no ) -->
     <body>
         <form id="formulario" method="post" action="/pagina_onde_haga_falta.php">
             <label for="nom">Nom:</label><br>

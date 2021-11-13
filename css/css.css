@@ -1,3 +1,39 @@
+#detallProducte{
+    width:30vw;
+    height:50vh;
+    border-style:double;
+    border-width: 5vh;
+    border-radius: 1vh;
+    border-color:rgb(95, 158, 160);
+    background-color:rgba(0, 0, 0, 0.89);
+    margin-left:30vw;
+    margin-top:20vh;
+    color:rgba(255, 255, 255, 0.856);
+}
+
+#pName{
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.2vh;
+}
+
+#detallProducte img{
+    width: 9vw;
+    height:25vh;
+    margin-left:2.2vw;
+
+}
+
+#desc{
+    margin-left:20vw;
+    z-index:2;
+}
+
+body{
+
+    background-color: rgba(52, 88, 90, 0.89);
+}
+
 #containers {
     display: flex;
 }
@@ -53,12 +89,6 @@
     border:none;
     color:white;
 }
-
-/* #menuP li p {
-    text-align: center;
-    font-size:small;
-    /* margin-bottom:1vh; esta linea estaba comentada
-} */
 
 #textH {
     font-size: larger;
@@ -119,4 +149,42 @@ header {
     margin-top:5vh;
     visibility: hidden;
     /* margin-right:3vw; */
+}
+
+#cont{
+    display:flex;
+}
+
+.prod{
+    height: 22vh;
+    width: 22vw;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(209,180,217,1) 48%, rgba(148,187,233,1) 100%);
+    padding:25px;
+    margin:25px;
+    flex: auto;
+    border: 2.5px;
+    border-style:ridge;
+    border-color:black;
+    border-radius:0.7vh;
+}
+
+#formulario{
+    margin:17vh 41vw;
+}
+
+body{
+    background-color: cyan;
+}
+
+header h1{
+
+    margin-left:38vw;
+    margin-top:7vh;
+    color:brown;
+}
+
+body label{
+
+    color:brown;
 }
