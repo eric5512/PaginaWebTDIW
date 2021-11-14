@@ -28,8 +28,12 @@
         <li class="itemsH"><img id='session' src='https://e7.pngegg.com/pngimages/549/560/png-clipart-computer-icons-login-scalable-graphics-email-accountability-blue-logo.png'
             onclick='changeVisibility("desp4")'></li>
         <div id="desp4" class="desplegable">
-            <li class="auxList"><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=log_in'"; ?> >Log in</a></li>
-            <li class="auxList"><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=sign_in'"; ?>>Sign in</a></li>
+            <?php if ($logged == false) { ?>
+                <li class="auxList"><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=log_in'"; ?> >Login</a></li>
+                <li class="auxList"><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=sign_up'"; ?>>Sign up</a></li>
+            <?php } else { ?>
+                <li class="auxList"><a <?php echo "href='".$_SERVER['PHP_SELF']."?logged='"; ?> >Log out</a></li>
+            <?php }?>
         </div>
     </ul>
     

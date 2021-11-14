@@ -1,5 +1,5 @@
 <?php
-    include_once __DIR__."/../db.settings.php";
+    include_once __DIR__."/../db_settings.php";
 
     function DBconnect() {
         try {
