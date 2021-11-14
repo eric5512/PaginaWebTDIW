@@ -30,8 +30,7 @@
 }
 
 body{
-
-    background-color: rgba(52, 88, 90, 0.89);
+    background-color: rgba(5, 107, 112, 0.89);
 }
 
 #containers {
@@ -114,10 +113,6 @@ body{
     flex-direction: row;
 }
 
-body {
-    background-color:rgba(144, 203, 238, 0.692);
-}
-
 header {
     background-color:rgba(228, 231, 14, 0.801);
     border-radius:7px;
@@ -130,24 +125,10 @@ header {
     height: 2vh;
 }
 
-#div1 {
+.desplegable {
     float:left;
     margin-top:5vh;
     visibility:hidden;
-    /* margin-right:3vw; */
-}
-
-#div2 {
-    float:left;
-    margin-top:5vh;
-    visibility: hidden;
-    /* margin-right:3vw; */
-}
-
-#div3 {
-    float:left;
-    margin-top:5vh;
-    visibility: hidden;
     /* margin-right:3vw; */
 }
 
@@ -173,12 +154,7 @@ header {
     margin:17vh 41vw;
 }
 
-body{
-    background-color: cyan;
-}
-
 header h1{
-
     margin-left:38vw;
     margin-top:7vh;
     color:brown;
@@ -186,5 +162,5 @@ header h1{
 
 body label{
 
-    color:brown;
+    color:black;
 }
