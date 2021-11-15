@@ -1,20 +1,21 @@
-function loadXMLDoc() {
-    var xmlhttp = new XMLHttpRequest();
+$(document).ready(function() {
+    $(document).on("click", "#return_list", function() {
+        $.get("/controller/c_listProd.php", { cat: 'all' }, function(response) {
+            $("#outer").html(response); 
+        });
+    });
+});
 
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-            if (xmlhttp.status == 200) {
-                document.getElementById("myDiv").innerHTML = xmlhttp.responseText; 
-            }
-            else if (xmlhttp.status == 400) {
-                alert('There was an error 400'); 
-            }
-            else {
-                alert('something else other than 200 was returned');
-            }
-        }
-    };
+$(document).ready(function() {
+    $(document).on("change", "#categoria_filter", function() {
+        $.get("/controller/c_listProd.php", { cat: $("#categoria_filter").val() }, function(response) {
+            $("#outer").html(response); 
+        });
+    });
 
-    xmlhttp.open("GET", "ajax_info.txt", true);
-    xmlhttp.send();
-}
+    $(document).on("click", ".goto_detall", function() {
+        $.get("/controller/c_detallProd.php", { prod: this.title }, function(response) {
+            $("#outer").html(response); 
+        });
+    });
+});

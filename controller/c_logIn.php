@@ -4,7 +4,8 @@
 
     $conn = DBconnect();
     if (login($conn)) {
-        header("Location: " . $_SERVER['PHP_SELF'] . "?logged=true");
+        $_SESSION['log'] = true;
+        header("Location: " . $_SERVER['PHP_SELF']);
     }
 
     include_once __DIR__."/../view/v_logIn.php"; 

@@ -6,3 +6,9 @@ function changeVisibility(elem){
         element.style.visibility = "hidden";
     }
 }
+
+$(document).ready(function (){
+    $("#session").click(function (){
+        $("#desp").css("visibility", $("#desp").css("visibility") == "hidden" ? "visible": "hidden");
+    });
+});

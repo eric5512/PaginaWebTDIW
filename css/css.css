@@ -37,11 +37,25 @@ body{
     display: flex;
 }
 
-#menuP {
+#menu_header {
     /* text-align: center; */
     display:flex;
     flex-direction: row;
     flex-wrap: auto;
+}
+
+#menu_desp {
+    display: inline;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+#desp {
+    visibility: hidden;
 }
 
 #logo {
@@ -65,7 +79,6 @@ body{
 
 .itemsH {
     /* text-align:center; */
-    
     border-radius:15px;
     color: white;
     background-color: #a531dfcb;
@@ -161,6 +174,5 @@ header h1{
 }
 
 body label{
-
     color:black;
 }

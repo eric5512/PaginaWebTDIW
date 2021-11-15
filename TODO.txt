@@ -2,5 +2,6 @@
 [X] Elegir tematica
 [ ] Revisar el menú
 [X] Modelo MVC
-[ ] Consultas parametrizadas
-[ ] AJAX
+[X] Consultas parametrizadas
+[X] AJAX
+[X] JQuery AJAX
