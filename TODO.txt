@@ -5,3 +5,6 @@
 [X] Consultas parametrizadas
 [X] AJAX
 [X] JQuery AJAX
+[ ] base.html en index
+[ ] tags html en resources
+[ ] no llamar a los controllers en el AJAX

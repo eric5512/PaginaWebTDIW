@@ -2,7 +2,7 @@
     <?php echo "<a href='".$_SERVER['PHP_SELF']."'>
         <img id='logo' src='https://toppng.com/uploads/preview/under-construction-png-11552942307mimddiktuq.png'></a>"
     ?>
-    <P id="textH">ALGO MEDIANAMENTE LARGO DE PRUEBA</P>
+    <P id="textH">Tienda de electronica generica</P>
     <ul id="menu_desp">
         <li><img id='session' src='https://e7.pngegg.com/pngimages/549/560/png-clipart-computer-icons-login-scalable-graphics-email-accountability-blue-logo.png'></li>
         <div id="desp">
