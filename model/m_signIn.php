@@ -1,6 +1,6 @@
 <?php
     function signIn($conn) {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['password'] != "") {
             $nom     = $_POST['nom'];
             $cognoms = $_POST['cognoms'];
             $pass    = password_hash($_POST['password'], PASSWORD_DEFAULT);

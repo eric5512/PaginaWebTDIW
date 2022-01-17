@@ -1,8 +1,9 @@
 <?php
-    include_once __DIR__."/base.html";
+    include_once __DIR__."/lib/carro.php";
     $page = $_GET['action'] ?? null;
     session_start();
-    $_SESSION['log'] = $_SESSION['log'] ?? false;
+    $_SESSION['log']   = $_SESSION['log'] ?? false;
+    $_SESSION['carro'] = $_SESSION['carro'] ?? serialize(new Carro());
     switch ($page) {
         case '':
             include_once __DIR__."/resource_principal.php";
@@ -26,6 +27,10 @@
         
         case 'log_out':
             include_once __DIR__."/controller/c_logOut.php";
+            break;
+
+        case 'perfil':
+            include_once __DIR__."/resource_perfil.php";
             break;
 
         default:

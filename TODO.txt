@@ -1,10 +1,20 @@
-[X] Base de datos
-[X] Elegir tematica
-[ ] Revisar el menú
-[X] Modelo MVC
-[X] Consultas parametrizadas
-[X] AJAX
-[X] JQuery AJAX
-[ ] base.html en index
-[ ] tags html en resources
-[ ] no llamar a los controllers en el AJAX
+  [X] Base de datos
+  [X] Elegir tematica
+o [ ] Revisar el menú
+  [X] Modelo MVC
+  [X] Consultas parametrizadas
+  [X] AJAX
+  [X] JQuery AJAX
+  [X] base.html en index
+  [X] tags html en resources
+o [ ] no llamar a los controllers en el AJAX
+  [X] añadir al carro con cantidad
+  [X] eliminar carro
+o [X] modificar cantidad
+  [X] pagina mi cuenta
+  [X] carrito visible siempre
+  [ ] modificar perfil
+  [ ] pagina confirmacion compra
+  [ ] Registre: validació a la part de servidor
+  [ ] Registre: validació a la part de client
+o [ ] Buscador

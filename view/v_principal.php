@@ -29,9 +29,13 @@
         <div id="categories">
             <ul>
                 <li><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=prod'"; ?> >Todos los productos</a></li>
-                <li><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=prod&&cat=1'"; ?> >Semiconductores</a></li>
-                <li><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=prod&&cat=2'"; ?> >LEDs</a></li>
-                <li><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=prod&&cat=3'"; ?> >ARM chips</a></li><br>
+                <?php foreach ($categorias as $cat) {
+                    $nom = $cat['nom'];
+                    $categoria_id = $cat['categoria_id'];
+                    echo "<li><a echo " . "href='".$_SERVER['PHP_SELF']."?action=prod&&cat=$categoria_id'";
+                    echo ">$nom</a></li>";
+                }
+                ?>
             </ul>
         </div>
     </div>
