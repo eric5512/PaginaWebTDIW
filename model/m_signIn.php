@@ -8,6 +8,20 @@
             $cp      = $_POST['number'];
             $carrer  = $_POST['adresa'];
 
+            $filtros = filter_input_array(
+                INPUT_POST, array($nom     => FILTER_SANITIZE_STRING,
+                                $cognoms => FILTER_SANITIZE_STRING,
+                                $pass    => FILTER_DEFAULT,
+                                $email   => FILTER_VALIDATE_EMAIL,
+                                $cp      => FILTER_VALIDATE_INT,
+                                $carrer  => FILTER_SANITIZE_STRING)
+            );
+
+            if (in_array(false, $filtros, true)) {
+                echo "Comprueba los datos antes de volver a enviar el formulario";
+                return -1;
+            }
+
             $query = $conn->prepare("SELECT email FROM usuari WHERE email=:email");
 
             if (!$query->execute(array(":email" => $email))) {

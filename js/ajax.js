@@ -23,8 +23,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(document).on("click", ".addCarro", function() {
         $.get("/controller/c_carro.php", { id: $(".id").val(), name: $(".pName").html(), quant: $(".quant").val(), pu: $("#preu").attr("data-price"), mode: "add" }, function(response) {
-            alert(response);
-            $(location).prop('href', '/index.php');
+            $("#modal-data").html(response);
         });
     });
 });
@@ -32,20 +31,17 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(document).on("click", ".rmCarro", function() {
         $.get("/controller/c_carro.php", { id: this.value, mode: "rm-id" }, function(response) {
-            alert(response);
-            $(location).prop('href', '/index.php');
+            $("#modal-data").html(response);
         });
     });
     $(document).on("click", ".modCarro", function() {
         $.get("/controller/c_carro.php", { id: this.value, quant: $("#quant-"+this.value).val(), mode: "modify" }, function(response) {
-            alert(response);
-            $(location).prop('href', '/index.php');
+            $("#modal-data").html(response);
         });
     });
     $(document).on("click", "#vaciarCarro", function() {
         $.get("/controller/c_carro.php", { mode: "rm-all" }, function(response) {
-            alert(response);
-            $(location).prop('href', '/index.php');
+            $("#modal-data").html(response);
         });
     });
 });

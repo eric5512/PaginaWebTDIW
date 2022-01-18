@@ -33,6 +33,14 @@
             include_once __DIR__."/resource_perfil.php";
             break;
 
+        case 'comprar':
+            include_once __DIR__."/resource_compra.php";
+            break;
+
+        case 'search':
+            include_once __DIR__."/resource_busqueda.php";
+            break;
+        
         default:
             break;
     }

@@ -30,7 +30,7 @@
             <ul>
                 <li><a <?php echo "href='".$_SERVER['PHP_SELF']."?action=prod'"; ?> >Todos los productos</a></li>
                 <?php foreach ($categorias as $cat) {
-                    $nom = $cat['nom'];
+                    $nom = htmlentities($cat['nom'], ENT_QUOTES | ENT_HTML5, "utf-8");
                     $categoria_id = $cat['categoria_id'];
                     echo "<li><a echo " . "href='".$_SERVER['PHP_SELF']."?action=prod&&cat=$categoria_id'";
                     echo ">$nom</a></li>";

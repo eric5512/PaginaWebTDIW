@@ -6,6 +6,15 @@
             $this->items = array();
         }
 
+        function totalPrice() {
+            $total = 0;
+            foreach ($this->items as $id => list($name, $quant, $price)) {
+                $total += $quant * $price;
+            }
+
+            return $total;
+        }
+
         function addItem($id, $name, $quant, $pu) {
             if (array_key_exists($id, $this->items)) {
                 list($name, $old_quant, $pu) = $this->items[$id];
