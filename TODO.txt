@@ -13,7 +13,7 @@ o [ ] no llamar a los controllers en el AJAX
 o [X] modificar cantidad
   [X] pagina mi cuenta
   [X] carrito visible siempre
-  [ ] modificar perfil
+  [X] modificar perfil
   [ ] pagina confirmacion compra
   [ ] Registre: validació a la part de servidor
   [ ] Registre: validació a la part de client

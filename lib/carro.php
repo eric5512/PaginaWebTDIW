@@ -6,21 +6,21 @@
             $this->items = array();
         }
 
-        function addItem($id, $name, $quant) {
+        function addItem($id, $name, $quant, $pu) {
             if (array_key_exists($id, $this->items)) {
-                list($name, $old_quant) = $this->items[$id];
-                $this->items[$id] = [$name, $quant+$old_quant];
+                list($name, $old_quant, $pu) = $this->items[$id];
+                $this->items[$id] = [$name, $quant+$old_quant, $pu];
             }
             else {
-                $this->items[$id] = [$name, $quant];
+                $this->items[$id] = [$name, $quant, $pu];
         
             }
         }
         
         function modifyQuant($id, $quant) {
             if (array_key_exists($id, $this->items)) {
-                list($name, $old) = $this->items[$id];
-                $this->items[$id] = [$name, $quant];
+                list($name, $old, $pu) = $this->items[$id];
+                $this->items[$id] = [$name, $quant, $pu];
                 return true;
             }
             return false;

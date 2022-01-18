@@ -23,13 +23,16 @@
         <span id="close-modal" class="close">&times;</span>
         <h1>Carro</h1>
         <?php
-            foreach ($carro->items as $id => list($name, $quant)) {
-                echo "<br/>\n<div>$name\t<input type='number' id='quant-$id' value='$quant'></input>";
+            $total = 0;
+            foreach ($carro->items as $id => list($name, $quant, $pu)) {
+                $total += $quant * $pu;
+                echo "<br/>\n<div>$name<br/>Precio unitario: $pu €<br/>Cantidad: <input type='number' id='quant-$id' value='$quant'></input>";
                 echo "<button class='modCarro' value='$id'>Modificar cantidad</button>";
                 echo "<button class='rmCarro' value='$id'>Eliminar del carro</button></div><br/>";
             }
-
+            
             if (count($carro->items) != 0) {
+                echo "<p>Precio total: $total €</p>";
                 echo "<button>Comprar</button>";
                 echo "<button id='vaciarCarro'>Vaciar carro</button>";
             } else {

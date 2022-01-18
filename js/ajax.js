@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(document).on("click", ".addCarro", function() {
-        $.get("/controller/c_carro.php", { id: $(".id").val(), name: $(".pName").html(), quant: $(".quant").val(), mode: "add" }, function(response) {
+        $.get("/controller/c_carro.php", { id: $(".id").val(), name: $(".pName").html(), quant: $(".quant").val(), pu: $("#preu").attr("data-price"), mode: "add" }, function(response) {
             alert(response);
             $(location).prop('href', '/index.php');
         });

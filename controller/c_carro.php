@@ -9,10 +9,11 @@
         $id    = $_GET['id'] ?? NULL;
         $name  = $_GET['name'] ?? NULL;
         $quant = $_GET['quant'] ?? NULL;
+        $pu = $_GET['pu'] ?? NULL;
 
-        if ($id != NULL && $name != NULL && $quant != NULL) {
+        if ($id != NULL && $name != NULL && $quant != NULL && $pu != NULL) {
             $carro = unserialize($_SESSION['carro']);
-            $carro->addItem($id, $name, $quant);
+            $carro->addItem($id, $name, $quant, $pu);
             $_SESSION['carro'] = serialize($carro);
             echo "Producto añadido al carrito correctamente";
         }
@@ -22,9 +23,12 @@
 
         if ($id != NULL && $new_quant != NULL) {
             $carro = unserialize($_SESSION['carro']);
-            $carro->modifyQuant($id, $new_quant);
-            $_SESSION['carro'] = serialize($carro);
-            echo "Cantidad modificada correctamente";
+            if ($carro->modifyQuant($id, $new_quant)) {
+                $_SESSION['carro'] = serialize($carro);
+                echo "Cantidad modificada correctamente";
+            } else {
+                echo "ERROR";
+            }
         }
     } else if ($mode == "rm-all") {
         $_SESSION['carro'] = serialize(new Carro());
